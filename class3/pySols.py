@@ -42,7 +42,7 @@ def q6():
     # [1, 2, 4, 16]
 
 
-    program = "i1 o"
+    program = "i1 d2 d2 s2 s2 o"
 
     mem = [0,0,0,0]
 
@@ -66,10 +66,9 @@ def q6():
 
 def main():
     funcs = [q1,q2,q3,q4,q5,q6]
-
     for x in funcs:
         x()
-        print("\n\n")
+        print()
 
 if __name__ == "__main__":
     main()
