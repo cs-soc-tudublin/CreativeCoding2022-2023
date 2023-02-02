@@ -42,35 +42,16 @@ def q5():
     print(checkIn([1,1,1,1,2,2,3,4,5,6,7,7],5))
     
 def q6():
+    funcs = []
+    funcs.append(lambda a,b : a + b)
+    funcs.append(lambda a,b : a - b)
+    funcs.append(lambda a,b : a / b)
+    funcs.append(lambda a,b : a * b)
+    funcs.append(lambda a,b : a ** b)
+    funcs.append(lambda a,b : a % b)
 
-    def addTwo(a,b):
-        return a + b
-
-    def subTwo(a,b):
-        return a - b
-
-    def mulTwo(a,b):
-        return a * b
-
-    def divTwo(a,b):
-        return a / b
-
-    def powTwo(a,b):
-        return a ** b
-
-    def floorTwo(a,b):
-        return a // b
-
-    def modTwo(a,b):
-        return a % b
-
-    lst = [addTwo, subTwo, mulTwo, divTwo, powTwo, floorTwo, modTwo]
-
-    for i in lst:
-        a = 50
-        b = 5
-
-        print(i(a, b))
+    for x in funcs:
+        print(x(2,3))
 
 if __name__ == "__main__":
     x = [q1,q2, q3, q4, q5, q6]
