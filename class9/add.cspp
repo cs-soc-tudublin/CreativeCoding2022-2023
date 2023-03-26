@@ -1,0 +1,8 @@
+push 30
+push 30
+push 5
+push 4
+add
+add
+add
+print
